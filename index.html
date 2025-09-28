@@ -1,1 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalBuzz - 12-Day Onboarding Module</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* A light gray background */
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3730a3 100%);
+        }
 
+        /* --- Custom Timeline Styles --- */
+        .timeline-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #3b82f6; /* Blue line */
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: 0;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            z-index: 1;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #3b82f6;
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-left {
+            left: 0;
+        }
+        .timeline-right {
+            left: 50%;
+        }
+        .timeline-right::after {
+            left: -16px;
+        }
+        .timeline-content {
+            position: relative;
+        }
+
+        /* Responsive timeline for mobile */
+        @media screen and (max-width: 768px) {
+            .timeline-container::after {
+                left: 35px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-left, .timeline-right {
+                left: 0;
+            }
+            .timeline-left::after, .timeline-right::after {
+                left: 22px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <header class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-2xl font-bold">DigitalBuzz Sales Onboarding</h1>
+        </div>
+    </header>
+
+    <section class="hero-gradient text-white py-20 sm:py-28">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight" data-aos="fade-down">
+                12-Day New Relationship Manager Training Module
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-blue-200 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Your comprehensive guide to becoming a successful RM at DigitalBuzz.
+            </p>
+        </div>
+    </section>
+    
+    <main class="py-16">
+        <div class="timeline-container">
+
+            <div class="timeline-item timeline-left">
+                <div class="timeline-content bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500" data-aos="fade-right">
+                    <h2 class="text-2xl font-bold text-blue-600">Day 1: Company Induction & Foundation</h2>
+                    <p class="mt-2 text-gray-600 font-medium"><strong>Objective:</strong> To understand DigitalBuzz's vision, your role within the company structure, and the basic rules of engagement.</p>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-bold text-lg mb-2">Morning Session (10:00 AM - 1:00 PM): HR & Corporate Induction</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li><strong>Welcome:</strong> Introduction by HR Manager, Ankita, and Senior HR, Ragini.</li>
+                            <li><strong>Company Policies:</strong> A detailed walkthrough of the company handbook, leave policy, code of conduct, and administrative procedures.</li>
+                            <li><strong>Office Tour:</strong> Familiarization with the office layout and facilities.</li>
+                            <li><strong>System Setup:</strong> IT orientation for email, CRM, and other internal software.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-bold text-lg mb-2">Afternoon Session (2:00 PM - 5:00 PM): Business & Sales Induction</h4>
+                        <div class="space-y-4 text-gray-700">
+                            <p><strong>Introduction to the Company:</strong> Overview of our Real Estate Lead Generation agency. Mission, vision, and core values. How the sales department contributes to overall business goals. Who We Are: DigitalBuzz is a premier Real Estate Lead Generation agency. Our mission is to empower real estate professionals with high-quality, targeted leads through innovative digital marketing strategies. Our Core Business: We specialize in generating high-intent leads for real estate Channel Partners (CPs), Sole Sellers, and Developers through targeted campaigns on Meta (Facebook, Instagram) and Google.</p>
+                            
+                            <p><strong>Key Responsibilities:</strong> Identifying and generating leads through various Sources(Rera Data, cold calling, marketing campaigns); Understanding clients' needs and offering proper solution; Building and maintaining relationships with clients; Meeting or exceeding sales targets; Negotiating percentages and closing deals.</p>
+
+                            <div>
+                                <h5 class="font-semibold">Collaboration and Communication:</h5>
+                                <p>Meet the Departments:</p>
+                                <ul class="list-disc list-inside ml-4">
+                                    <li><strong>Sales:</strong> Samir Kumar (Sales Head), Jimmy (Team Lead)</li>
+                                    <li><strong>Operations:</strong> Gautam (Operation Head), Bhavesh & Vinayak (Executives)</li>
+                                    <li><strong>Accounts:</strong> Nupur, Anjali (Sr. Accounts Exe), Yogesh (Sr. Accounts Exe), Pooja</li>
+                                    <li><strong>HR:</strong> Ankita (HR Manager), Ragini (Sr. HR)</li>
+                                    <li><strong>Admin:</strong> Godhan</li>
+                                    <li><strong>Graphics:</strong> Gautham</li>
+                                </ul>
+                                <p class="mt-2">Effective communication within the team and with other departments, such as operations, graphics, and accounts is important. Regular reporting and feedback mechanisms. Participation in team meetings, training sessions, and strategy discussions.</p>
+                            </div>
+
+                            <p><strong>Company Process & Workflow:</strong> As an RM, you are the bridge between DigitalBuzz and the client. You are their single point of contact. You will coordinate with the Operations Team and Graphics Team for campaign management and creative approvals. The Accounts Team shares reports and invoices with clients.</p>
+
+                            <div>
+                                <h5 class="font-semibold">Rules & Regulations:</h5>
+                                <ul class="list-disc list-inside ml-4">
+                                    <li><strong>Job Timings:</strong> 10:00 AM to 7:00 PM.</li>
+                                    <li><strong>Breaks:</strong> 30-minute lunch break, plus two 15-minute tea breaks.</li>
+                                    <li><strong>Dress Code:</strong> Business Formals.</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h5 class="font-semibold">Your Career Path & Opportunity:</h5>
+                                <p><strong>Chain of Command:</strong> Sales Executive -> RM -> Senior RM -> Team Lead -> Branch Manager -> Cluster Manager -> Sales Head.</p>
+                                <p><strong>Growth Opportunity:</strong> DigitalBuzz is launching a new CRM and ERP solution for our clients and expanding into Tier-2 and international cities. Your success as an RM is a direct pathway to leadership roles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-right">
+                <div class="timeline-content bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500" data-aos="fade-left">
+                    <h2 class="text-2xl font-bold text-blue-600">Day 2: Mastering the Bangalore Real Estate Market</h2>
+                    <p class="mt-2 text-gray-600 font-medium"><strong>Objective:</strong> To develop a deep understanding of the Bangalore real estate landscape, including key locations, major developers, and client profiles.</p>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-bold text-lg mb-2">Segment 1: Bangalore Market & Connectivity Map (Mapping of the Area)</h4>
+                        <p class="text-gray-700 mb-4">Understand the geographical location of our clients, including upcoming real estate developments. Familiarize yourself with project details like configuration, carpet area, pricing, and launch timeline. Gain knowledge of the area's connectivity and notable landmarks to better position our services in line with the local context. This point is completely different for the various locations that we are working for the better understanding senior or TL will give the proper mapping of the area of the city and the developments. Understanding the city is crucial for efficient meeting planning. As an RM with a bike, you can navigate traffic effectively by knowing the key arterial roads and metro lines.</p>
+                        
+                        <div class="my-4 rounded-lg overflow-hidden border-2 border-blue-200">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.5665842182!2d77.4661254216893!3d12.954280242258281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1727423075200!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <ul class="space-y-3 text-gray-700">
+                            <li><strong>North Bangalore (Hebbal, Yelahanka, Devanahalli):</strong> Connectivity: Bellary Road (NH 44), upcoming Metro Blue Line. New Launch (2025): Prestige Somerville (near Old Airport Road).</li>
+                            <li><strong>East Bangalore (Whitefield, Sarjapur Road, Marathahalli):</strong> Connectivity: Outer Ring Road (ORR), Purple Metro Line. The city's IT corridor. New Launch (2025): Godrej Woodscapes (Budigere Cross).</li>
+                            <li><strong>South Bangalore (Kanakapura Road, Bannerghatta Road, Electronic City):</strong> Connectivity: Green Metro Line, NICE Ring Road. New Launch (2025): Brigade Sanctuary (off Sarjapur Road).</li>
+                            <li><strong>West Bangalore (Rajajinagar, Yeshwanthpur, Tumkur Road):</strong> Connectivity: Green and Purple Metro Lines. New Launch (2025): Sobha Neopolis (near Panathur, Varthur).</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-bold text-lg mb-2">Segment 2: A-Grade Developers & Their Projects</h4>
+                    </div>
+
+                    <div class="mt-6 text-gray-700 space-y-3">
+                         <h4 class="font-bold text-lg mb-2">Segment 3: The Channel Partner (CP) Profile</h4>
+                         <p><strong>Who is channel partner?</strong> A channel partner is a builder's official marketing partner. As the builder announces the new launch he call all channel partners for meeting and tell them the configuration and the pricing he is going to launch at his project. he said, to channel partner to start marketing and sell their product. On selling, the channel partner will get some percentage of brokerage from the developer.</p>
+                         <div>
+                             <p><strong>Normally in real estate, there are three phases of property:</strong></p>
+                             <ul class="list-disc list-inside ml-4">
+                                 <li>Pre-launch phase</li>
+                                 <li>Under Construction phase</li>
+                                 <li>Ready to Move or Sustenance Phase</li>
+                             </ul>
+                             <p>Mostly channel partner works in the pre-launch and under-construction phases.</p>
+                         </div>
+                         <div>
+                            <p><strong>Profileing of channel partner:</strong></p>
+                             <ul class="list-disc list-inside ml-4">
+                                 <li>Individual channel partner.</li>
+                                 <li>Small firm channel partners they have team of 4-5 people.</li>
+                                 <li>Big firm channel partners they have more than 10 employees and they work on two types of projects first one is AOP (Annual Operation Plan) and other is the Retail segment.</li>
+                             </ul>
+                         </div>
+                         <p><strong>The POC:</strong> The owner is your main Point of Contact. They are sophisticated and business-savvy. Approach them as a consultant, not a salesperson.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-left">
+                 <div class="timeline-content bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500" data-aos="fade-right">
+                    <h2 class="text-2xl font-bold text-blue-600">Day 3: Sales Pitch & Calling</h2>
+                    <p class="mt-2 text-gray-600"><strong>Training:</strong> Learn the DigitalBuzz cold calling pitch and scripts. Focus on the "Straight Line Method" to establish authority in the first 30 seconds.</p>
+                    <p class="mt-1 text-gray-600"><strong>Real Calling:</strong> Supervised live calls to potential clients to practice the pitch and build confidence.</p>
+
+                    <div class="mt-6 text-gray-700 space-y-4">
+                        <p><strong>Pitching:</strong> In this part we will understand the Pitching and the points to pitch to client on the cold calling at first we will start from the greeting that is a good morning/ good afternoon and then we will say “our name and a our position such as a relationship manager or sales executive “or “we can just say like I am calling from a digital buzz then another part is legacy and who we are? it is the most important thing to say on cold call in first one minute or 30 seconds.</p>
+
+                        <div>
+                            <h5 class="font-semibold mb-2">English Pitch:</h5>
+                            <blockquote class="border-l-4 border-gray-300 pl-4 py-2 bg-gray-50 rounded-r-lg">
+                                <p>"Hi good morning, sir Onkar here from digital buzz actually sir we are real estate lead generation agency working from last 4 year in Pune. we work for real estate channel partner, sole seller as well as developer. we generate leads through Facebook Instagram and Google. I got your number from rera site as I see your working in Pune location sir I am also working with the 110 channel partners in Pune on a various projects. By the way, which project are you currently working on?"</p>
+                                <p class="text-sm mt-2 text-gray-500 italic">You can refer this pitch and make your own pitch keep changing it with respect to time.</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-r-lg">
+                            <p class="font-bold">Must mention the Legacy, Your name, Company name and the quality percentage of leads that we are delivering from the various platforms like Facebook Instagram and Google.</p>
+                        </div>
+                        
+                        <div>
+                            <h5 class="font-semibold mb-2">Another Hindi Pitch for reference:</h5>
+                             <blockquote class="border-l-4 border-gray-300 pl-4 py-2 bg-gray-50 rounded-r-lg space-y-2">
+                                <p><strong>You:</strong> "Good morning sir main Anurag baat kar raha hun digital Buzz se sir hum lead generate karte for real estate channel partners, SoleSellers and developer ke liye and our lead quality is 70% that means agar aap 100 leads generate karte ho to usmein se 70 leads jo hai vah aapko qualified milegi that means client ka budget, location, and configuration as per our ads rahega. Sir abhi aap kaun se location pe kam kar rahe ho??"</p>
+                                <p><strong>Ans by Client-</strong> …..</p>
+                                <p><strong>You:</strong> "Okay, sir main bhi use location per kam kar raha hun xyz channel partner ke liye and currently main vahan per 70% ki quality lead deliver kar raha hun from meta."</p>
+                            </blockquote>
+                        </div>
+                        
+                        <div>
+                            <h5 class="font-semibold mb-2">Questions by Clients..</h5>
+                             <blockquote class="border-l-4 border-gray-300 pl-4 py-2 bg-gray-50 rounded-r-lg">
+                                <p>"Sir kya ham ek 30 minute ka meeting kar sakte hain ? so that aapke jo bhi questions hai main aapko vahan per Aakar bata dunga as well as main mere company ki profile and mein kaun se project ke liye kya kam kar raha hun vah bhi main aapko Aakar dikha sakta hun so agar aapko Sahi lagta hai then we can continue. Because all questions ke answer call pr possible nahi hai and mere pass laptop bhi hai so agar aapko kuch reference ke liye graphics vagaira dekhna hoga to main voh bhi aapko dikha sakta hoon. So Sir aap aaj second half main available ho kya ? Main aapke office me akar aapko presentation dikha sakta hun."</p>
+                                <p class="text-sm mt-2 text-gray-500 italic">And As him for his office Address and Confirm it on google map.</p>
+                            </blockquote>
+                        </div>
+
+                    </div>
+                 </div>
+            </div>
+
+            <div class="timeline-item timeline-right">
+                 <div class="timeline-content bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500" data-aos="fade-left">
+                    <h2 class="text-2xl font-bold text-blue-600">Day 4 & 5: F2F Meeting Module Training</h2>
+                    <p class="mt-2 text-gray-600"><strong>Training:</strong> A detailed walkthrough of the face-to-face (F2F) meeting process. This includes pre-meeting research, structuring the conversation from greeting to strategy presentation, and discussing company policies.</p>
+
+                    <div class="mt-6 text-gray-700 space-y-4">
+                        <p><strong>Before Going to a meeting know your clients and basic things.</strong></p>
+                        <p>Face to face meeting ke liye pahle client ki location and use location per Jo projects hai un projects ki lead quality and CPL ko review sheet mein dekh lo uske bad from profileing client ka team size and lead requirement ke hisab se strategy built kar lo. for example - client ko kitne project karva sakte hain? Kitna lead count daily de sakte hain? and kya quality ratio de sakte hain? yah sab chijen meeting se pahle decide kar lo and diary mein note down karke rakh lo.</p>
+
+                        <div>
+                            <h5 class="font-semibold mb-2">Meeting Flow:</h5>
+                            <p>First client se jakar milane per greeting kar lo uske bad -</p>
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>Self introduction</li>
+                                <li>Company introduction with legacy</li>
+                                <li>Currently working projects</li>
+                                <li>Name of well reputed channel partners</li>
+                            </ol>
+                            <p class="mt-2">And uske bad client se poochho vah kaun se location per ya fir kaun se project per kam kar rahe hain?</p>
+                            <p>And uss project pay client ko kitni lead required hai kya quality expected hai and uska kya target hai yah sab poochh lo and after discussion aap abhi aap kis strategy bata do.</p>
+                        </div>
+                        
+                        <div>
+                             <h5 class="font-semibold mb-2">Discussing Company Policies:</h5>
+                             <p>Strategy Bata dene ke bad client se company ki kuchh policies discuss kar lo -</p>
+                             <ol class="list-decimal list-inside ml-4 space-y-2">
+                                <li>Sir ham add manager ka access kisi ko bhi nahin dete Hain.</li>
+                                <li>Daily reports and daily screenshots of ad manager ham bhej sakte hain</li>
+                                <li>Our lead will be 100% exclusive which means aap ki lead lifetime aapki hai. Aapko lead real time mein mil jaega through my automation.</li>
+                                <li>Payment ke bad 48 hours mein campaign start ho jaega.</li>
+                                <li>for optimization and quality improvement weekly feedback lagega from your side.</li>
+                                <li>Agar aapka CRM hai to page access share karna padega ya to aap page banakar do ya FIR main mere page se aapko access de dunga.</li>
+                                <li>Payment directly aap company ke current account mein transfer kar Sakte hai.</li>
+                             </ol>
+                             <p class="mt-2">Agar client ke pass GST no. hai to client se GST certificate le kr Account team ko dena hai.</p>
+                             <p class="mt-2">Ye sab policies pr cliet ko kuch Questions hai to voh resolve krne hai and final payment procedure btani hai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-left">
+                <div class="timeline-content bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500" data-aos="fade-right">
+                    <h2 class="text-2xl font-bold text-blue-600">Day 6: Mock Sessions</h2>
+                    <p class="mt-2 text-gray-700"><strong>Activity:</strong> Conduct mock F2F meetings with trainers and senior RMs playing the role of the client. Receive constructive feedback on your presentation, communication, and objection handling skills.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-right">
+                <div class="timeline-content bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500" data-aos="fade-left">
+                    <h2 class="text-2xl font-bold text-blue-600">Day 7, 8, & 9: On-Field Meetings & Objection Handling</h2>
+                    <p class="mt-2 text-gray-700"><strong>Activity:</strong> Accompany senior RMs on actual client meetings. Observe how they build rapport, present solutions, and handle real-world objections. Participate in post-meeting debriefs.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-left">
+                <div class="timeline-content bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500" data-aos="fade-right">
+                    <h2 class="text-2xl font-bold text-blue-600">Day 10: Your First Meeting (Shadowed)</h2>
+                    <p class="mt-2 text-gray-700"><strong>Activity:</strong> You will lead your own client meeting from start to finish. A senior RM or Team Lead will accompany you to observe and provide support if needed.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-right">
+                <div class="timeline-content bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500" data-aos="fade-left">
+                    <h2 class="text-2xl font-bold text-blue-600">Day 11: Independent Meetings</h2>
+                    <p class="mt-2 text-gray-700"><strong>Activity:</strong> You will conduct your own client meetings independently. The focus is on applying all the training from the previous days in a live environment.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-left">
+                <div class="timeline-content bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500" data-aos="fade-right">
+                    <h2 class="text-2xl font-bold text-blue-600">Day 12: Review Meeting</h2>
+                    <p class="mt-2 text-gray-600 font-medium"><strong>Objective:</strong> A comprehensive review of your performance with your Team Lead and the Sales Head.</p>
+                     <div class="mt-6">
+                        <h4 class="font-bold text-lg mb-2">Agenda:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Discuss feedback from mock calls and on-field meetings.</li>
+                            <li>Review your understanding of products and processes.</li>
+                            <li>Address any remaining questions or challenges.</li>
+                            <li>Set clear performance goals for your first 30 days as a qualified Relationship Manager.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 DigitalBuzz Real Estate Marketing Agency. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Animation duration
+            once: true,    // Whether animation should happen only once - while scrolling down
+        });
+    </script>
+</body>
+</html>
